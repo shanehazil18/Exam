@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Basic CRUD</h1>
+  <p>Complete the application to do the following</p>
+  
+  <ul>
+    <li>Add new record</li>
+    <li>Edit existing record</li>
+    <li>Delete a record</li>
+  </ul>
+  <p>Note: The form should not accept on invalid inputs.</p>
+
+    <fieldset>
+      <legend>User Profile</legend>
+      Name: <input type="text" id="name"><br>
+      Birthday: <input type="date" id="bday"><br>
+      Gender: 
+      <select name="gender" id="gender">
+        <option >Male</option>
+        <option >Female</option>   
+      </select><br>
+      <button id="click" onclick="addHtmlTableRow()">Submit</button>
+    </fieldset>
+    <br>
+    <br>
+
+    <table id="table">
+    <tr>
+      <th>Name</th>
+      <th>Birthdate</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Actions</th>
+    </tr>
+  </table>
+
+  <script src="crud.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
